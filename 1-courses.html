@@ -7,11 +7,12 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <title>Smile School Courses</title>
-    <!-- Style links-->
+    <!-- Style links -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -24,7 +25,7 @@
     <!-- Header -->
     <header class="header-courses container-fluid text-white">
       <!-- Navbar -->
-      <div class="row mb-2">
+      <div class="row mb-0 mb-md-2">
 	<div class="container mt-3">
 	  <nav class="navbar navbar-expand-md d-flex mb-4">
 	    <button class="navicon navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,6 +65,46 @@
     </header>
     <!-- Main -->
     <main>
-    </main>
-  </body>
+      <!-- Filters Section -->
+      <section class="section-filter container-fluid mx-md-5">
+	<div class="row text-white p-5">
+	  <div class="col-sm-12 col-md-12 col-lg-4">
+	    <p class="text-uppercase m-0 font-weight-bold input-title">keywords</p>
+	    <div class="input-group mb-3">
+	      <div class="input-group-prepend bg-span">
+		<span class="font-icon-filter input-group-text bg-transparent border-0 border-bottom bg-span text-white" id="basic-addon1"></span>
+	      </div>
+	      <input type="text" class="form-control border-0 border-bottom rounded-0" placeholder="Search by keyword" aria-label="keywords" aria-describedby="basic-addon1">
+	    </div>
+	  </div>
+	  <div class="col-sm">
+	    <p class="text-uppercase m-0 font-weight-bold input-title">Topic</p>
+	    <div class="input-group mb-3">
+	      <div class="input-group-prepend bg-span w-100">
+		<button class="btn dropdown-toggle bg-span text-white border-0 w-100 d-flex justify-content-between align-items-center border-bottom" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Novice</button>
+		<div class="dropdown-menu w-100">
+		  <a class="dropdown-item" href="#">Novice</a>
+		  <a class="dropdown-item" href="#">Intermediate</a>
+		  <a class="dropdown-item" href="#">Expert</a>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-sm">
+	    <p class="text-uppercase m-0 font-weight-bold input-title">Sort by</p>
+	    <div class="input-group mb-3">
+	      <div class="input-group-prepend bg-span w-100">
+		                                <button class="btn dropdown-toggle text-white w-100 bg-span border-0 d-flex justify-content-between align-items-center border-bottom type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Most Popular</button>
+                                <div class="dropdown-menu w-100">
+                                    <a class="dropdown-item" href="#">Most popular</a>
+                                    <a class="dropdown-item" href="#">Most Recent</a>
+                                    <a class="dropdown-item" href="#">Most viewed</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
